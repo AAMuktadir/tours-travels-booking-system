@@ -32,11 +32,11 @@ const SearchBar = () => {
 
    return <Col lg="12" className='bg-white rounded-full px-5 py-2'>
       <div className="search__bar">
-         <Form className='d-flex align-items-center justify-content-between gap-4'>
+         <Form className='flex items-center justify-between gap-4'>
             <FormGroup className='d-flex gap-3 form__group '>
                <span><i class='ri-map-pin-line'></i></span>
                <div>
-                  <h6>Location</h6>
+                  <h6 className='text-2xl'>Location</h6>
                   <input type="text" placeholder='Where are you going?' ref={locationRef} />
                </div>
             </FormGroup>

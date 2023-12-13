@@ -108,7 +108,7 @@ const Booking = ({ tour, avgRating }) => {
                </ListGroupItem>
             </ListGroup>
 
-            <Button className='btn primary__btn w-100 mt-4' onClick={handleClick}>Book Now</Button>
+            <Button className='btn primary__btn w-100 mt-4 ' onClick={handleClick}>Book Now</Button>
          </div>
       </div>
    )

@@ -50,7 +50,7 @@ const Header = () => {
    const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
 
    return (
-      <header className='header' ref={headerRef}>
+      <header className='header bg-[#27E8DC]' ref={headerRef}>
          <Container>
             <Row>
                <div className="nav__wrapper d-flex align-items-center justify-content-between">
@@ -61,7 +61,7 @@ const Header = () => {
                   {/* ========================== */}
 
                   {/* ========== MENU START ========== */}
-                  <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+                  <div className="navigation px-8" ref={menuRef} onClick={toggleMenu}>
                      <ul className="menu d-flex align-items-center gap-5">
                         {
                            nav__links.map((item, index) => (
