@@ -76,12 +76,12 @@ export const getTourBySearch = async (req, res) => {
 
    // hear 'i' means case sensitive 
    const city = new RegExp(req.query.city, 'i')
-   const distance = parseInt(req.query.distance)
-   const maxGroupSize = parseInt(req.query.maxGroupSize)
+   // const distance = parseInt(req.query.distance)
+   // const maxGroupSize = parseInt(req.query.maxGroupSize)
 
    try {
       // gte means greater than equal
-      const tours = await Tour.find({ city, distance: { $gte: distance }, maxGroupSize: { $gte: maxGroupSize } }).populate('reviews')
+      const tours = await Tour.find({ city: city })
 
       res.status(200).json({ success: true, message: 'Successfully', data: tours })
    } catch (error) {
