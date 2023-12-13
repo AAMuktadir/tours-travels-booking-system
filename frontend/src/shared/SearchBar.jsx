@@ -30,7 +30,7 @@ const SearchBar = () => {
       navigate(`/tours/search?city=${location}`, {state: result.data})
    }
 
-   return <Col lg="12">
+   return <Col lg="12" className='bg-white rounded-full px-5 py-2'>
       <div className="search__bar">
          <Form className='d-flex align-items-center justify-content-between gap-4'>
             <FormGroup className='d-flex gap-3 form__group '>
