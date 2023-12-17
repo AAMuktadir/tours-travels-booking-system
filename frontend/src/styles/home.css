@@ -1,10 +1,16 @@
 :root {
-   --primary-color     : #ff7e01;
-   --secondary-color   : #faa935;
+   --primary-color     : #27E8DC;
+   --secondary-color   : #12667B;
    --heading-color     : #0b2727;
    --text-color        : #6e7074;
    --font-name         : "Montserrat", sans-serif;
    --subtitle-font-name: "Island Moments", cursive;
+}
+
+.hero_image_muk{
+   background-image: url("../assets/images/herobg.jpeg");
+   background-size: cover;
+   height: 80vh;
 }
 
 .hero__subtitle img {

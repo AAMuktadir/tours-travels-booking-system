@@ -82,11 +82,12 @@
    border          : none;
    border-radius   : 14px 0 14px 0;
    font-style      : italic;
+   color: #27E8DC
 }
 
 .booking__btn:hover {
    transform: scale(1.1);
-   color    : purple;
+   color    : green;
 }
 
 /* =============== RESPONSIVE ================ */

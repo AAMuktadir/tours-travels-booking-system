@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useContext } from 'react'
 import { Container, Row, Button } from 'reactstrap'
 import { NavLink, Link, useNavigate } from 'react-router-dom'
-import Logo from '../../assets/images/logo.png'
+import Logo from '../../assets/images/Logo.jpeg'
 import "./header.css"
 import { AuthContext } from '../../context/AuthContext'
 
@@ -50,18 +50,18 @@ const Header = () => {
    const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
 
    return (
-      <header className='header' ref={headerRef}>
+      <header className='header bg-[#27E8DC]' ref={headerRef}>
          <Container>
             <Row>
                <div className="nav__wrapper d-flex align-items-center justify-content-between">
                   {/* ========== LOGO ========== */}
                   <div className="logo">
-                     <img src={Logo} alt="" />
+                     <img src={Logo} alt="logo" />
                   </div>
                   {/* ========================== */}
 
                   {/* ========== MENU START ========== */}
-                  <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+                  <div className="navigation px-8" ref={menuRef} onClick={toggleMenu}>
                      <ul className="menu d-flex align-items-center gap-5">
                         {
                            nav__links.map((item, index) => (
@@ -89,7 +89,7 @@ const Header = () => {
                      </div>
 
                      <span className="mobile__menu" onClick={toggleMenu}>
-                        <i class="ri-menu-line"></i>
+                        <i className="ri-menu-line"></i>
                      </span>
                   </div>
                </div>
